@@ -10,3 +10,6 @@ bin
 tags
 Gemfile.lock
 spec/reports
+/tmp
+/.autotest
+/.rspec
