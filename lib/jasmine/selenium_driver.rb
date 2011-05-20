@@ -44,8 +44,7 @@ module Jasmine
     end
 
     def eval_js(script)
-      result = @driver.execute_script(script)
-      JSON.parse("{\"result\":#{result}}")["result"]
+      @driver.execute_script( script )
     end
 
     def json_generate(obj)
