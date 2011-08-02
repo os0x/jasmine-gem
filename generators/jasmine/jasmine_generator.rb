@@ -11,6 +11,7 @@ class JasmineGenerator < Rails::Generator::Base
 
     m.directory "spec/javascripts/helpers"
     m.file "jasmine-example/spec/SpecHelper.js", "spec/javascripts/helpers/SpecHelper.js"
+    m.file "spec/javascripts/helpers/jscoverage.js", "spec/javascripts/helpers/jscoverage.js"
 
     m.directory "spec/javascripts/support"
     m.file "spec/javascripts/support/jasmine_runner.rb", "spec/javascripts/support/jasmine_runner.rb"

@@ -22,10 +22,10 @@ Gem::Specification.new do |s|
   if ENV['RAILS_VERSION'] == 'pojs-rspec1'
     if ENV["RUBY_VERSION"] =~ /1\.8\.6/
       #1.3.2 buffer overflows
-      s.add_development_dependency 'rspec', '= 1.3.1'
+      s.add_development_dependency 'rspec', '= 1.2.9'
       s.add_development_dependency 'rack', "1.1"
     else
-      s.add_development_dependency 'rspec', '>= 1.3.1', '< 2'
+      s.add_development_dependency 'rspec', '>= 1.2.9', '< 2'
     end
     s.add_development_dependency 'rake-tasks'
   elsif ENV['RAILS_VERSION'] == 'pojs-rspec2'
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
       #1.3.2 buffer overflows
       s.add_development_dependency 'rspec', '= 1.3.1'
     else
-      s.add_development_dependency 'rspec', '>= 1.3.1', '< 2'
+      s.add_development_dependency 'rspec', '>= 1.2.9', '< 2'
     end
     # for development & test of Rails 2 Generators
     s.add_development_dependency 'rails', '2.3.11', "< 3"
@@ -56,6 +56,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'jasmine-core', ">= 1.1.0.rc2"
   s.add_dependency 'rack', '>= 1.1'
-  s.add_dependency 'rspec', '>= 1.3.1'
+  s.add_dependency 'rspec', '>= 1.2.9'
   s.add_dependency 'selenium-webdriver', '>= 0.1.3'
 end
